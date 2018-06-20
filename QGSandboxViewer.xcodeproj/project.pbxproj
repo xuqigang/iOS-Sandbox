@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B4A5F0720D9FB0600B9B963 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F0620D9FB0600B9B963 /* AppDelegate.m */; };
+		7B4A5F0A20D9FB0600B9B963 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F0920D9FB0600B9B963 /* ViewController.m */; };
+		7B4A5F0D20D9FB0600B9B963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A5F0B20D9FB0600B9B963 /* Main.storyboard */; };
+		7B4A5F0F20D9FB0900B9B963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A5F0E20D9FB0900B9B963 /* Assets.xcassets */; };
+		7B4A5F1220D9FB0900B9B963 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A5F1020D9FB0900B9B963 /* LaunchScreen.storyboard */; };
+		7B4A5F1520D9FB0900B9B963 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F1420D9FB0900B9B963 /* main.m */; };
+		7B4A5F1F20D9FB0900B9B963 /* QGSandboxViewerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F1E20D9FB0900B9B963 /* QGSandboxViewerUITests.m */; };
+		7B4A5F3520D9FBDF00B9B963 /* QGSandboxViewerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F3320D9FBDF00B9B963 /* QGSandboxViewerVC.m */; };
+		7B4A5F3620D9FBDF00B9B963 /* QGSandboxViewerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A5F3420D9FBDF00B9B963 /* QGSandboxViewerVC.xib */; };
+		7B4A5F3A20DA0E9800B9B963 /* QGSendboxViewerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F3820DA0E9800B9B963 /* QGSendboxViewerCell.m */; };
+		7B4A5F3B20DA0E9800B9B963 /* QGSendboxViewerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4A5F3920DA0E9800B9B963 /* QGSendboxViewerCell.xib */; };
+		7B4A5F4320DA1D5700B9B963 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4A5F4220DA1D5700B9B963 /* WebKit.framework */; };
+		7B4A5F4520DA20E500B9B963 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4A5F4420DA20E500B9B963 /* MobileCoreServices.framework */; };
+		7B4A5F4720DA20EE00B9B963 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4A5F4620DA20EE00B9B963 /* SystemConfiguration.framework */; };
+		7B4A5F5020DA31AD00B9B963 /* QGSendboxViewerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4A5F4F20DA31AD00B9B963 /* QGSendboxViewerModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B4A5F1B20D9FB0900B9B963 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B4A5EFA20D9FB0600B9B963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4A5F0120D9FB0600B9B963;
+			remoteInfo = QGSandboxViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B4A5F0220D9FB0600B9B963 /* QGSandboxViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QGSandboxViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4A5F0520D9FB0600B9B963 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B4A5F0620D9FB0600B9B963 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B4A5F0820D9FB0600B9B963 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7B4A5F0920D9FB0600B9B963 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7B4A5F0C20D9FB0600B9B963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B4A5F0E20D9FB0900B9B963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B4A5F1120D9FB0900B9B963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B4A5F1320D9FB0900B9B963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4A5F1420D9FB0900B9B963 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B4A5F1A20D9FB0900B9B963 /* QGSandboxViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QGSandboxViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4A5F1E20D9FB0900B9B963 /* QGSandboxViewerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QGSandboxViewerUITests.m; sourceTree = "<group>"; };
+		7B4A5F2020D9FB0900B9B963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4A5F3220D9FBDF00B9B963 /* QGSandboxViewerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGSandboxViewerVC.h; sourceTree = "<group>"; };
+		7B4A5F3320D9FBDF00B9B963 /* QGSandboxViewerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QGSandboxViewerVC.m; sourceTree = "<group>"; };
+		7B4A5F3420D9FBDF00B9B963 /* QGSandboxViewerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QGSandboxViewerVC.xib; sourceTree = "<group>"; };
+		7B4A5F3720DA0E9800B9B963 /* QGSendboxViewerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGSendboxViewerCell.h; sourceTree = "<group>"; };
+		7B4A5F3820DA0E9800B9B963 /* QGSendboxViewerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QGSendboxViewerCell.m; sourceTree = "<group>"; };
+		7B4A5F3920DA0E9800B9B963 /* QGSendboxViewerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QGSendboxViewerCell.xib; sourceTree = "<group>"; };
+		7B4A5F4220DA1D5700B9B963 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7B4A5F4420DA20E500B9B963 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7B4A5F4620DA20EE00B9B963 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7B4A5F4E20DA31AD00B9B963 /* QGSendboxViewerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGSendboxViewerModel.h; sourceTree = "<group>"; };
+		7B4A5F4F20DA31AD00B9B963 /* QGSendboxViewerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QGSendboxViewerModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B4A5EFF20D9FB0600B9B963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4A5F4720DA20EE00B9B963 /* SystemConfiguration.framework in Frameworks */,
+				7B4A5F4520DA20E500B9B963 /* MobileCoreServices.framework in Frameworks */,
+				7B4A5F4320DA1D5700B9B963 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4A5F1720D9FB0900B9B963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B4A5EF920D9FB0600B9B963 = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F0420D9FB0600B9B963 /* QGSandboxViewer */,
+				7B4A5F1D20D9FB0900B9B963 /* QGSandboxViewerUITests */,
+				7B4A5F0320D9FB0600B9B963 /* Products */,
+				7B4A5F4120DA1D5600B9B963 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B4A5F0320D9FB0600B9B963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F0220D9FB0600B9B963 /* QGSandboxViewer.app */,
+				7B4A5F1A20D9FB0900B9B963 /* QGSandboxViewerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B4A5F0420D9FB0600B9B963 /* QGSandboxViewer */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F2920D9FB2A00B9B963 /* SandboxViewer */,
+				7B4A5F0520D9FB0600B9B963 /* AppDelegate.h */,
+				7B4A5F0620D9FB0600B9B963 /* AppDelegate.m */,
+				7B4A5F0820D9FB0600B9B963 /* ViewController.h */,
+				7B4A5F0920D9FB0600B9B963 /* ViewController.m */,
+				7B4A5F0B20D9FB0600B9B963 /* Main.storyboard */,
+				7B4A5F0E20D9FB0900B9B963 /* Assets.xcassets */,
+				7B4A5F1020D9FB0900B9B963 /* LaunchScreen.storyboard */,
+				7B4A5F1320D9FB0900B9B963 /* Info.plist */,
+				7B4A5F1420D9FB0900B9B963 /* main.m */,
+			);
+			path = QGSandboxViewer;
+			sourceTree = "<group>";
+		};
+		7B4A5F1D20D9FB0900B9B963 /* QGSandboxViewerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F1E20D9FB0900B9B963 /* QGSandboxViewerUITests.m */,
+				7B4A5F2020D9FB0900B9B963 /* Info.plist */,
+			);
+			path = QGSandboxViewerUITests;
+			sourceTree = "<group>";
+		};
+		7B4A5F2920D9FB2A00B9B963 /* SandboxViewer */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F2C20D9FB9C00B9B963 /* Model */,
+				7B4A5F2B20D9FB9600B9B963 /* View */,
+				7B4A5F2A20D9FB9000B9B963 /* Controller */,
+			);
+			path = SandboxViewer;
+			sourceTree = "<group>";
+		};
+		7B4A5F2A20D9FB9000B9B963 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F3220D9FBDF00B9B963 /* QGSandboxViewerVC.h */,
+				7B4A5F3320D9FBDF00B9B963 /* QGSandboxViewerVC.m */,
+				7B4A5F3420D9FBDF00B9B963 /* QGSandboxViewerVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B4A5F2B20D9FB9600B9B963 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F3720DA0E9800B9B963 /* QGSendboxViewerCell.h */,
+				7B4A5F3820DA0E9800B9B963 /* QGSendboxViewerCell.m */,
+				7B4A5F3920DA0E9800B9B963 /* QGSendboxViewerCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B4A5F2C20D9FB9C00B9B963 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F4E20DA31AD00B9B963 /* QGSendboxViewerModel.h */,
+				7B4A5F4F20DA31AD00B9B963 /* QGSendboxViewerModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7B4A5F4120DA1D5600B9B963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4A5F4620DA20EE00B9B963 /* SystemConfiguration.framework */,
+				7B4A5F4420DA20E500B9B963 /* MobileCoreServices.framework */,
+				7B4A5F4220DA1D5700B9B963 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B4A5F0120D9FB0600B9B963 /* QGSandboxViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4A5F2320D9FB0900B9B963 /* Build configuration list for PBXNativeTarget "QGSandboxViewer" */;
+			buildPhases = (
+				7B4A5EFE20D9FB0600B9B963 /* Sources */,
+				7B4A5EFF20D9FB0600B9B963 /* Frameworks */,
+				7B4A5F0020D9FB0600B9B963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QGSandboxViewer;
+			productName = QGSandboxViewer;
+			productReference = 7B4A5F0220D9FB0600B9B963 /* QGSandboxViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B4A5F1920D9FB0900B9B963 /* QGSandboxViewerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4A5F2620D9FB0900B9B963 /* Build configuration list for PBXNativeTarget "QGSandboxViewerUITests" */;
+			buildPhases = (
+				7B4A5F1620D9FB0900B9B963 /* Sources */,
+				7B4A5F1720D9FB0900B9B963 /* Frameworks */,
+				7B4A5F1820D9FB0900B9B963 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4A5F1C20D9FB0900B9B963 /* PBXTargetDependency */,
+			);
+			name = QGSandboxViewerUITests;
+			productName = QGSandboxViewerUITests;
+			productReference = 7B4A5F1A20D9FB0900B9B963 /* QGSandboxViewerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B4A5EFA20D9FB0600B9B963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "徐其岗";
+				TargetAttributes = {
+					7B4A5F0120D9FB0600B9B963 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					7B4A5F1920D9FB0900B9B963 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 7B4A5F0120D9FB0600B9B963;
+					};
+				};
+			};
+			buildConfigurationList = 7B4A5EFD20D9FB0600B9B963 /* Build configuration list for PBXProject "QGSandboxViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B4A5EF920D9FB0600B9B963;
+			productRefGroup = 7B4A5F0320D9FB0600B9B963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B4A5F0120D9FB0600B9B963 /* QGSandboxViewer */,
+				7B4A5F1920D9FB0900B9B963 /* QGSandboxViewerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B4A5F0020D9FB0600B9B963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4A5F3620D9FBDF00B9B963 /* QGSandboxViewerVC.xib in Resources */,
+				7B4A5F3B20DA0E9800B9B963 /* QGSendboxViewerCell.xib in Resources */,
+				7B4A5F1220D9FB0900B9B963 /* LaunchScreen.storyboard in Resources */,
+				7B4A5F0F20D9FB0900B9B963 /* Assets.xcassets in Resources */,
+				7B4A5F0D20D9FB0600B9B963 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4A5F1820D9FB0900B9B963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B4A5EFE20D9FB0600B9B963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4A5F3520D9FBDF00B9B963 /* QGSandboxViewerVC.m in Sources */,
+				7B4A5F5020DA31AD00B9B963 /* QGSendboxViewerModel.m in Sources */,
+				7B4A5F0A20D9FB0600B9B963 /* ViewController.m in Sources */,
+				7B4A5F1520D9FB0900B9B963 /* main.m in Sources */,
+				7B4A5F3A20DA0E9800B9B963 /* QGSendboxViewerCell.m in Sources */,
+				7B4A5F0720D9FB0600B9B963 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4A5F1620D9FB0900B9B963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4A5F1F20D9FB0900B9B963 /* QGSandboxViewerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B4A5F1C20D9FB0900B9B963 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4A5F0120D9FB0600B9B963 /* QGSandboxViewer */;
+			targetProxy = 7B4A5F1B20D9FB0900B9B963 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B4A5F0B20D9FB0600B9B963 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4A5F0C20D9FB0600B9B963 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B4A5F1020D9FB0900B9B963 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4A5F1120D9FB0900B9B963 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B4A5F2120D9FB0900B9B963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B4A5F2220D9FB0900B9B963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B4A5F2420D9FB0900B9B963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 555BFZT2K6;
+				INFOPLIST_FILE = QGSandboxViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrtc.video;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e1032c01-6239-41a5-abff-f51812d2b537";
+				PROVISIONING_PROFILE_SPECIFIER = "JHStarRTC DEV";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B4A5F2520D9FB0900B9B963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 555BFZT2K6;
+				INFOPLIST_FILE = QGSandboxViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrtc.video;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e1032c01-6239-41a5-abff-f51812d2b537";
+				PROVISIONING_PROFILE_SPECIFIER = "JHStarRTC DEV";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B4A5F2720D9FB0900B9B963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55N827BU;
+				INFOPLIST_FILE = QGSandboxViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrtc.video.QGSandboxViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QGSandboxViewer;
+			};
+			name = Debug;
+		};
+		7B4A5F2820D9FB0900B9B963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG55N827BU;
+				INFOPLIST_FILE = QGSandboxViewerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.starrtc.video.QGSandboxViewerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QGSandboxViewer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B4A5EFD20D9FB0600B9B963 /* Build configuration list for PBXProject "QGSandboxViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4A5F2120D9FB0900B9B963 /* Debug */,
+				7B4A5F2220D9FB0900B9B963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4A5F2320D9FB0900B9B963 /* Build configuration list for PBXNativeTarget "QGSandboxViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4A5F2420D9FB0900B9B963 /* Debug */,
+				7B4A5F2520D9FB0900B9B963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4A5F2620D9FB0900B9B963 /* Build configuration list for PBXNativeTarget "QGSandboxViewerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4A5F2720D9FB0900B9B963 /* Debug */,
+				7B4A5F2820D9FB0900B9B963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B4A5EFA20D9FB0600B9B963 /* Project object */;
+}
