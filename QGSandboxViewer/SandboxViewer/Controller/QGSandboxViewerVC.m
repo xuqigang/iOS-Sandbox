@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *tableViewDataSource;
 @property (nonatomic, strong) UIAlertController * alertController;
-
+- (instancetype)initWithDirectory:(NSString*)directory;
 @end
 
 @implementation QGSandboxViewerVC
@@ -127,6 +127,24 @@
     return YES;
 }
 
+- (nullable NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0) __TVOS_PROHIBITED{
+    UITableViewRowAction *row = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+        QGSendboxViewerModel *model = self.tableViewDataSource[indexPath.row];
+        NSError *error;
+        [[NSFileManager defaultManager] removeItemAtPath:[model.filePath stringByAppendingFormat:@"/%@",model.fileName] error:&error];
+        if (!error) {
+            [self.tableViewDataSource removeObject:model];
+            [tableView reloadData];
+        } else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"删除失败，您没有操作权限" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:cancle];
+            [self presentViewController:alert animated:YES completion:nil];
+            NSLog(@"error = %@",error);
+        }
+    }];
+    return @[row];
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row < self.tableViewDataSource.count) {
     

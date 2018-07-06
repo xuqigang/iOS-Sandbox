@@ -12,6 +12,4 @@
 
 - (instancetype)initWithHomeDirectory;
 
-- (instancetype)initWithDirectory:(NSString*)directory;
-
 @end
